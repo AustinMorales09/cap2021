@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
-
+// app.use(express.static('client/build'));
 const uri = process.env.ATLAS_URI;
         
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
@@ -33,6 +33,11 @@ app.use('/restaurant', restaurantRouter);
 app.use('/shop', shopRouter);
 app.use('/attraction', attractionRouter);
 app.use('/history', historyRouter);
+
+if (process.env.NODE_ENV ==="production"){
+  app.use(express.static('client/build'))
+}
+
 
 app.listen(port, () => {
 console.log(`Server is running on port: ${port}`);
