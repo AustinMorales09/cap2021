@@ -36,7 +36,7 @@ app.use('/history', historyRouter);
 
 if (process.env.NODE_ENV ==="production"){
   app.use(express.static('client/build'))
-}
+};
 
 
 app.listen(port, () => {
