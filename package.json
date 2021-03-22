@@ -28,9 +28,9 @@
     "node": "14.x"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "cd client && npm run build",
     "heroku-postbuild": "",
-    "deploy": "gh-pages -d build",
+    "deploy": "cd client && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
