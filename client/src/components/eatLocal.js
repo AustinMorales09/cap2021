@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {BACKEND_URL} from '../config'
 
 const Restaurant = props => (
 <div className="container col-md-4 d-flex Eats">
@@ -23,7 +24,7 @@ export default class EatLocal extends Component {
     this.state = {restaurants: []};  
   }
   componentDidMount() {
-    axios.get('mongodb://localhost/Cluster0/restaurant/')
+    axios.get(BACKEND_URL +'restaurant/')
      .then(response => {
        this.setState({ restaurants: response.data });
      })
