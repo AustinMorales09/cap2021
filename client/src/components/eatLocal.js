@@ -23,7 +23,7 @@ export default class EatLocal extends Component {
     this.state = {restaurants: []};  
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/restaurant/')
+    axios.get('mongodb://localhost/Cluster0/restaurant/')
      .then(response => {
        this.setState({ restaurants: response.data });
      })
