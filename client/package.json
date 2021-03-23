@@ -12,6 +12,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "engines": {node},
   "keywords": [],
   "author": "",
   "license": "ISC",

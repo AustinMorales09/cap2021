@@ -34,7 +34,7 @@ app.use('/shop', shopRouter);
 app.use('/attraction', attractionRouter);
 app.use('/history', historyRouter);
 
-if (process.env.NODE_ENV ==="production"){
+if (process.env.NODE_ENV === "production"){
   app.use(express.static('client/build'))
 };
 
