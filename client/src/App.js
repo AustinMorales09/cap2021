@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import Components
 import Navbar from 'src/components/Navbar';
-import Footer from "./components/Footer";
+import Footer from "src/components/Footer";
 import Home  from "./components/Home";
 import About  from "./components/About";
 import EatLocal  from "./components/EatLocal";
