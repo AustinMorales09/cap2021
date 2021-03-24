@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
-// app.use(express.static('client/build'));
+app.use(express.static('client/build'));
 const uri = process.env.ATLAS_URI;
         
 mongoose.connect( uri|| 'mongodb://localhost/myFirstDatabase', { useNewUrlParser: true, useCreateIndex: true, 
