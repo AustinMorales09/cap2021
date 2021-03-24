@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static('client/build'));
 const uri = process.env.ATLAS_URI;
         
-mongoose.connect( uri|| 'mongodb://localhost/myFirstDatabase', { useNewUrlParser: true, useCreateIndex: true, 
+mongoose.connect( uri, { useNewUrlParser: true, useCreateIndex: true, 
 useUnifiedTopology: true }
 );
 const connection = mongoose.connection;
