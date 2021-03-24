@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,8 +18,8 @@ import CreateShop from './components/CreateShop';
 import CreateAttraction from './components/CreateAttraction';
 
 
-function App() {
-
+export default class App extends Component{
+  render(){
   return (
 
     <Router>
@@ -48,5 +48,5 @@ function App() {
     
   );
 }
+}
 
-export default App;
