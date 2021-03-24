@@ -24,7 +24,7 @@ export default class EatLocal extends Component {
     this.state = {restaurants: []};  
   }
   componentDidMount() {
-    axios.get(BACKEND_URL +'/restaurant/')
+    axios.get(BACKEND_URL +'restaurant/')
      .then(response => {
        this.setState({ restaurants: response.data });
      })
