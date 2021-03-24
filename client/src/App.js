@@ -5,17 +5,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Import Components
 import Navbar from 'src/components/Navbar';
 import Footer from "src/components/Footer";
-import Home  from "./components/Home";
-import About  from "./components/About";
-import EatLocal  from "./components/EatLocal";
-import ShopLocal  from "./components/ShopLocal";
-import Attractions  from "./components/Attractions";
-import CincyHistory  from "./components/CincyHistory";
-import Contact  from "./components/Contact";
-import CreateRestaurant from "./components/CreateRestaurant";
-import CreateHistory from "./components/CreateHistory";
-import CreateShop from "./components/CreateShop";
-import CreateAttraction from "./components/CreateAttraction";
+import Home  from "src/components/Home";
+import About  from "src/components/About";
+import EatLocal  from "src/components/EatLocal";
+import ShopLocal  from "src/components/ShopLocal";
+import Attractions  from "src/components/Attractions";
+import CincyHistory  from "src/components/CincyHistory";
+import Contact  from "src/components/Contact";
+import CreateRestaurant from "src/components/CreateRestaurant";
+import CreateHistory from "src/components/CreateHistory";
+import CreateShop from "src/components/CreateShop";
+import CreateAttraction from "src/components/CreateAttraction";
 
 
 function App() {
